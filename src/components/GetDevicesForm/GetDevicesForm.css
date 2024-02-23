@@ -1,0 +1,64 @@
+.GetDevicesFormContainer{
+    background-color: rgb(201, 201, 236);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: absolute;
+    /* z-index: 1000; */
+    top: 30%;
+    right: 15%;
+    width: 70%;
+    height: 50%;
+    gap: 1px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 4px 0px black;
+}
+
+.GetDevicesFormContainer .Header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px;
+    /* margin-top: -40px; */
+}
+
+.GetDevicesTableContainerDiv{
+    overflow-y: scroll;
+    scrollbar-width: thin;
+    margin: 10px 0px 10px 0px;
+    width: 90%;
+}
+
+.GetDevicesTableContainer{
+    /* border: 1px solid black; */
+    border-collapse: collapse;
+    border-radius: 8px;
+    width: 100%;
+}
+
+.crossIcon{
+    width: 20px;
+    position: absolute;
+    top: 2px;
+    right: 4px;
+    cursor: pointer;
+}
+
+.GetDevicesTableContainer{
+    padding: 10px;
+}
+
+td{
+    text-align: center;
+    padding: 4px;
+}
+
+.AllDevicesTableData:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+th{
+    padding: 4px;
+    text-transform: uppercase;
+}

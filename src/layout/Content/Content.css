@@ -1,0 +1,21 @@
+.main-content {
+    background-color: white;
+    flex: 1;
+    position: relative;
+  }
+
+  .blurred{
+    filter: blur(5px);
+  }
+
+  @media screen and (max-width: 1400px) {
+    .main-content {
+    }
+    
+  }
+  
+
+  @media screen and (max-width: 1200px) {
+    .main-content {
+    }
+  }

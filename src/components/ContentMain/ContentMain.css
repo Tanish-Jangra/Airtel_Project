@@ -1,0 +1,11 @@
+.main-content-holder{
+  /* background-color: green; */
+  flex: 1;
+  margin-top: 20px;
+  height: calc(100% - 82px);
+  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* position: relative; */
+}

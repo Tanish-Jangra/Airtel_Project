@@ -1,0 +1,129 @@
+/* sidebar */
+.sidebar {
+    background-color: #705DB4;
+    width: 280px;
+    padding: 40px 20px;
+    height: 100vh;
+    transition: var(--transition-default);
+  }
+  .user-info {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    column-gap: 16px;
+  }
+  .info-name {
+    font-weight: 700;
+  }
+  .info-img {
+    width: 48px;
+    height: 48px;
+    overflow: hidden;
+    border-radius: 100%;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .info-name {
+    font-size: 20px;
+    color: var(--clr-white);
+  }
+  .navigation {
+    margin-top: 28px;
+  }
+  .sidebar-change {
+    margin-left: -280px;
+  }
+  
+  .nav-item {
+    margin-bottom: 10px;
+    margin-right: 4px;
+    font-size: 20px;
+  }
+  .nav-link {
+    display: block;
+    height: 44px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: flex;
+    padding: 6px 14px;
+    column-gap: 12px;
+    letter-spacing: 0.03em;
+    border: 1px solid transparent;
+    transition: var(--transition-default);
+  }
+  .nav-link:hover {
+    border: 1px solid var(--clr-primar-light);
+  }
+  .nav-link.active {
+    background-color: white;
+    color: black;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+      rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+  }
+  .nav-link-icon {
+    width: 22px;
+  }
+  .nav-link-text {
+    text-transform: capitalize;
+  }
+
+  @media screen and (max-width: 1400px) {
+    .sidebar {
+      padding: 24px 16px;
+    }
+    .sidebar-bottom-content{
+      margin-top: 5px;
+      white-space: wrap;
+      font-size: 10px;
+    }
+  }
+  
+  @media screen and (max-width: 1200px) {
+    .sidebar {
+      width: 72px;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+    .sidebar-change {
+      margin-left: -72px;
+    }
+    .info-name {
+      display: none;
+    }
+    .nav-item {
+      display: flex;
+      justify-content: center;
+      /* margin-bottom: 18px; */
+    }
+    .nav-link {
+      padding: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 32px;
+      height: 32px;
+    }
+    .nav-link.active {
+      border-radius: 100%;
+    }
+    .nav-link:hover {
+      border-radius: 100%;
+    }
+    .nav-link-text {
+      display: none;
+    }
+    .sidebar-bottom-content{
+      margin-top: 5px;
+      white-space: wrap;
+      font-size: 10px;
+    }
+  }
+
+  @media screen and (max-width: 420px) {
+    .sidebar {
+      margin-left: -72px;
+    }
+    .sidebar-change {
+      margin-left: 0px;
+    }
+  }
